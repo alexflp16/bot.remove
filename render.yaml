@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bot-remove-bg
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python remove.py"
+    pythonVersion: 3.10
